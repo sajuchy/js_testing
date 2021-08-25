@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  CSS link here -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>BTS5</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center bg-danger text-warning mt-5"> Click to Switch Mode</h1>
+      <div class="row justify-content-center">
+        <div class="col-lg-4 text-center mt-5">
+          <button type="button" class="btn btn-dark" onclick="darkMode()">Dark Mode</button>
+        </div>
+        <div class="col-lg-4 text-center mt-5">
+          <button type="button" class="btn btn-success" onclick="lightMode()">Normal</button>
+        </div>
+      </div>
+
+      <h1 class="text-center fs-1 mt-5 bg-warning text-uppercase" id="head"> Change Text</h1>
+      <div class="content text-center mt-5">
+       
+        <h1 id="h1" class="text-danger">Hello world</h1>
+        <button type="button" class="btn btn-lg btn-success mt-2" onclick="textChange()">Click to change text</button>
+        <button type="button" class="btn btn-lg btn-danger mt-2" onclick="back()">Refresh</button>
+      </div>
+
+     <h1 class="text-center fs-1 mt-5 bg-info text-uppercase" id="c-head"> change text color </h1>
+      <div class="color text-center mt-5">
+        
+        <h2 id="h2">Welcome to shikhbe sobai Family</h2>
+        <p class="fs-3 mt-2" id="p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ut ea hic facere saepe minima quis velit aut ullam laboriosam?</p>
+        <button type="button"  class="btn btn-lg btn-info mt-2" onclick="changeColor()">Click to change color</button>
+        <button type="button"  class="btn btn-lg btn-danger mt-2" onclick="previous()">Refresh</button>
+      </div>
+      <h1 class="text-center fs-1 mt-5 bg-warning text-uppercase" id="c-count">Column Count </h1>
+      <div class="column text-center">
+        <p id="col" class="mt-5 fs-5 text-danger">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.t</p>
+        <button type="button"  class="btn btn-lg btn-info mt-4 " onclick="changeCol()">Click to Create Column</button>
+        <button type="button"  class="btn btn-lg btn-danger mt-4" onclick="noCol()">Refresh</button>
+      </div>
+
+      <div class="light mt-5 text-center">
+        <h1 class="text-center bg-danger text-warning mt-5">Light On/Light Off</h1>
+        <img src="images/pic_bulboff.gif" id="myImage" class="img-fluid mt-5" onclick="changeImg()" alt="">
+        <p class="text-center fs-3 text-danger text-capitalize mt-3">Click Bulb to turn off on</p>
+      </div>
+
+      <h1  class="text-center fs-1 mt-5 bg-warning text-uppercase" >Click the button to see the date</h1>
+
+      <div class="text-center">
+        <h3 id="hello">Hello World</h3>
+        <button  class="btn btn-info" onclick="displayDate()">Click to see the date</button>
+        <button class="btn btn-danger" onclick="resetDate()">Reset</button>
+      </div>
+      
+    </div>
+
+
+    <!-- with tag name -->
+    <section>
+      <!-- change behavior by using class name -->
+      <div class="container">
+        <h1 class="text-center fs-1 mt-5 bg-warning text-uppercase" id="head"> Change Text with color with class name</h1>
+        <div class="text-center">
+          <h2 class="head-2 mt-5">Hello Bangladesh</h2>
+          <button class="btn btn-success mb-5" onclick="textChange2()">Click to Change Text</button>
+          <button class="btn btn-danger mb-5" onclick="reset1()">reset</button>
+        </div>
+        <div class="text-center">
+          <h1 class="text-center fs-1 mt-5 bg-warning text-uppercase" id="head">Set Border</h1>
+          <h2 class="mt-5" id="hh">Hello Bangladesh</h2>
+          <button class="btn btn-success mb-5" onclick="setBorder()">Click to set border</button>
+          <button class="btn btn-danger mb-5" onclick="reset2()">reset</button>
+        </div>
+
+
+        <section>
+          <!-- image change with button -->
+          <div class="container">
+            <h1 class="text-center fs-1 mt-5  bg-warning text-uppercase">Click button to change img</h1>
+            <div class="img text-center mt-5 mb-3">
+              <img src="images/image-plane.jpg" class="d-block m-auto mb-5 img-fluid" alt="" id="img">
+              <button class="btn btn-info " onclick="imgOne()">ImgOne</button>
+              <button class="btn btn-danger ms-3" onclick="imgTwo()">ImgTwo</button>
+
+              <!-- mouse event -->
+              <h1 class="text-center fs-1 mt-5  bg-warning text-uppercase">Mouse Event</h1>
+              <!-- mouseOver -->
+              <img src="images/image-plane.jpg" class="d-block m-auto mb-5 mt-5 img-fluid" alt="" id="img1">
+              <button class="btn btn-info " onmouseover="imOne()">ImgOne</button>
+              <button class="btn btn-danger ms-3" onmouseover="imTwo()">ImgTwo</button>
+              <h1 class="text-center fs-1 mt-5  bg-warning text-uppercase">Mouse Out</h1>
+              <img src="images/image-plane.jpg" class="d-block m-auto mb-5 mt-5 img-fluid" alt="" id="img2">
+              <button class="btn btn-info " onmouseout="imThree()">ImgOne</button>
+              <button class="btn btn-danger ms-3" onmouseout="imFour()">ImgTwo</button>
+            </div>
+          </div>
+
+
+          
+        </section>
+
+        <section>
+         <div class="container">
+          <h1 class="text-center fs-1 mt-5 text-danger text-uppercase">Output Method</h1>
+          
+          <div class="text-center">
+            <h1 class="text-center fs-1 mt-5  bg-info text-uppercase">Alert Window</h1>
+            <button class="btn btn-info mt-3 mb-3" onclick="checkAlert()">Click here</button>
+          </div>
+
+          <div class="text-center">
+            <h1 class="text-center fs-1 mt-5  bg-info text-uppercase">Document.write</h1>
+            <p class="fs-2 text-success">The output of two variable can be seen on the edge of screen where I plus two variable and added with strings by using <br> var a = 300;
+              var b =200; <br>
+              var c = a+b; <br>
+              
+              document.write( 'I need '+ c + ' piece of paper')<br>
+            output will be <br>"I need 500 piece of paper"</p>
+              
+
+          </div>
+          
+         </div>
+
+        </section>
+
+        <!-- jquery start -->
+        <section>
+          <h1 class="text-center bg-dark text-white mt-5">Jquery start from here</h1>
+          <div class="container">
+            <div class="text-center mt-5 mb-5">
+              <h1 class="text-center bg-info">Click Button to get alert by jquery</h1>
+              <button class="btn btn-success mt-5" id="btx">Click To Get </button>
+            </div>
+
+            <div class="text-center mt-5 mb-5">
+              <h1 class="text-center bg-info">Click Button to change text by jquery</h1>
+              <h1 id="hh1">Welcome to SSB</h1>
+              <button class="btn btn-success mt-5" id="bty">Click To change </button>
+              <button class="btn btn-danger mt-5" id="btyReset">Reset</button>
+            </div>
+
+            <div class="text-center mt-5 mb-5">
+              <h1 class="text-center bg-info">Click Button to change color by jquery</h1>
+              <h1 id="hh2">Welcome to SSB</h1>
+              <p id="pp1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero dolorem debitis corporis quasi a recusandae ipsum maxime id deserunt hic!</p>
+              <button class="btn btn-success mt-5" id="btz">Click To change color</button>
+              <button class="btn btn-danger mt-5" id="btzReset">Reset</button>
+            </div>
+
+
+          </div>
+        </section>
+
+        
+
+        
+      </div>
+    </section>
+
+
+  
+
+    
+
+    <!-- js link here -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+   
+  </body>
+</html>
